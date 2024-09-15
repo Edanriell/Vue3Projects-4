@@ -1,0 +1,32 @@
+{
+	"files": [],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		},
+		{
+			"path": "./tsconfig.app.json"
+		},
+		{
+			"path": "./tsconfig.vitest.json"
+		}
+	],
+	"compilerOptions": {
+		"module": "NodeNext",
+		"lib": ["esnext", "dom"],
+		"types": [
+			"node",
+			"vuetify"
+		],
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"vite.config.ts"
+	, ".notes/9.6-game.ts"  ]
+}
